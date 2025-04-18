@@ -3,6 +3,8 @@
 # Commands
     - Create:
         kubectl create deploy [NAME] --image=[image-name] --replicas=[number-images] --dry-run=client -o yaml > [filename].yaml
+        kubectl create namespace [name] --image=[image-name] --dry-run=client > [file-name].yaml
+        kubectl create deployment [name] --image=[image-name] --dry-run=client > [file-name].yaml
     - Apply:
         kubectl apply -f [file-name].yaml
     -Describe:
